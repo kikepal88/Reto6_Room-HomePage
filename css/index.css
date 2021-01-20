@@ -24,9 +24,9 @@ header {
   position: absolute;
   width: 100%;
   height: 100px;
+  z-index: 1;
 }
 
-/* CONFIGURAR CON JS */
 header .header-logonav-container {
   position: relative;
   display: flex;
@@ -34,13 +34,12 @@ header .header-logonav-container {
   align-items: center;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.6);
+  /* background-color: rgba(0, 0, 0, 0.6); */
 }
 header .header-logonav-container.is-active {
   background-color: var(--white);
 }
 
-/* CONFIGURAR CON JS */
 .icon-menu {
   position: absolute;
   left: 20px;
@@ -55,7 +54,6 @@ header .header-logonav-container.is-active {
   background-image: url(https://firebasestorage.googleapis.com/v0/b/room-homepage.appspot.com/o/icon-close.svg?alt=media&token=f1369240-a2cc-42c0-8f9f-2d0f4750169a);
 }
 
-/* CONFIGURAR CON JS */
 .nav-container {
   position: absolute;
   right: -75vw;
@@ -81,6 +79,75 @@ header .header-logonav-container.is-active {
   font-weight: 700;
   color: var(--black);
   text-decoration: none;
+}
+
+main {
+  width: 100%;
+  height: auto;
+}
+
+main .main-sliders-container {
+  position: relative;
+}
+
+.sliders-container {
+  width: 100%;
+}
+.slider1 {
+  display: none;
+}
+.slider2 {
+  display: block;
+}
+.slider3 {
+  display: none;
+}
+
+.slider-description {
+  width: 100%;
+  height: auto;
+  padding: 50px 27px 60px;
+}
+.slider-description h2 {
+  margin-bottom: 20px;
+  font-size: 2.5rem;
+}
+.slider-description p {
+  margin-bottom: 40px;
+  color: var(--dark-gray);
+  line-height: 1.8rem;
+}
+.slider-description a {
+  font-weight: 600;
+  letter-spacing: 1rem;
+  text-decoration: none;
+  color: var(--black);
+}
+
+.sliders-call {
+  position: absolute;
+  top: 305px;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 110px;
+  height: 55px;
+  background-color: var(--black);
+}
+.sliders-call .arrow-icon {
+  width: 55px;
+  height: 55px;
+}
+.sliders-call .arrow-icon a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+.sliders-call .arrow-icon img {
+  width: 11px;
 }
 
 @media screen and (min-width: 720px) {
