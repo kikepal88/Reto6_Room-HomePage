@@ -56,12 +56,12 @@ header .header-logonav-container.is-active {
 
 .nav-container {
   position: absolute;
-  right: -75vw;
+  display: none;
   width: 75%;
   font-size: 1.3rem;
-  transition: 0.3s;
 }
 .nav-container.is-active {
+  display: block;
   right: 15px;
 }
 
@@ -94,13 +94,22 @@ main .main-sliders-container {
   width: 100%;
 }
 .slider1 {
+  display: block;
+}
+.slider1.is-active {
   display: none;
 }
 .slider2 {
+  display: none;
+}
+.slider2.is-active {
   display: block;
 }
 .slider3 {
   display: none;
+}
+.slider3.is-active {
+  display: block;
 }
 
 .slider-description {
