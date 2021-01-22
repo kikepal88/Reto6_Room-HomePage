@@ -34,7 +34,6 @@ header .header-logonav-container {
   align-items: center;
   width: 100%;
   height: 100%;
-  /* background-color: rgba(0, 0, 0, 0.6); */
 }
 header .header-logonav-container.is-active {
   background-color: var(--white);
@@ -80,6 +79,9 @@ header .header-logonav-container.is-active {
   color: var(--black);
   text-decoration: none;
 }
+.nav-container nav ul li a:hover {
+  text-decoration: underline;
+}
 
 main {
   width: 100%;
@@ -95,6 +97,7 @@ main .main-sliders-container {
 }
 .slider1 {
   display: block;
+  width: 100%;
 }
 .slider1.is-active {
   display: none;
@@ -104,12 +107,25 @@ main .main-sliders-container {
 }
 .slider2.is-active {
   display: block;
+  width: 100%;
 }
 .slider3 {
   display: none;
 }
 .slider3.is-active {
   display: block;
+  width: 100%;
+}
+
+.slider1-img img {
+  width: 100%;
+  height: auto;
+}
+.slider2-img img {
+  width: 100%;
+}
+.slider3-img img {
+  width: 100%;
 }
 
 .slider-description {
@@ -132,6 +148,9 @@ main .main-sliders-container {
   text-decoration: none;
   color: var(--black);
 }
+.slider-description a:hover {
+  color: var(--dark-gray);
+}
 
 .sliders-call {
   position: absolute;
@@ -142,11 +161,14 @@ main .main-sliders-container {
   align-items: center;
   width: 110px;
   height: 55px;
-  background-color: var(--black);
 }
 .sliders-call .arrow-icon {
   width: 55px;
   height: 55px;
+  background-color: var(--black);
+}
+.sliders-call .arrow-icon:hover {
+  background-color: var(--dark-gray);
 }
 .sliders-call .arrow-icon a {
   display: flex;
@@ -179,11 +201,206 @@ main .main-furniture-section {
   line-height: 1.8rem;
 }
 
+@media screen and (min-width: 425px) {
+  .sliders-call {
+    top: 353px;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .sliders-call {
+    top: 521px;
+  }
+}
+
 @media screen and (min-width: 720px) {
+  body {
+    font-size: 1.4rem;
+  }
+
+  .logo-container {
+    width: 80px;
+  }
+  .logo-container img {
+    width: 100%;
+  }
+
+  .nav-container nav ul li a {
+    font-size: 1.5rem;
+  }
+
+  .slider1-img {
+    height: 60vh;
+  }
+  .slider1-img img {
+    height: 100%;
+  }
+
+  .slider-description h2 {
+    font-size: 3rem;
+  }
+  .slider-description p {
+    line-height: 2.2rem;
+  }
+
+  .sliders-call {
+    top: 621px;
+    width: 140px;
+    height: 70px;
+  }
+  .sliders-call .arrow-icon {
+    width: 70px;
+    height: 70px;
+  }
+  .sliders-call .arrow-icon img {
+    width: 15px;
+  }
+
+  .furniture-description p {
+    line-height: 2.2rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  .sliders-call {
+    top: 667px;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .sliders-call {
+    top: 698px;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .sliders-call {
+    top: 794px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  body {
+    max-height: 100vh;
+  }
+
   .icon-menu {
     display: none;
   }
   .icon-menu.close-icon {
     display: none;
+  }
+
+  header .header-logonav-container {
+    justify-content: flex-start;
+    width: 55%;
+    padding: 0 50px;
+  }
+
+  .nav-container {
+    position: static;
+    display: flex;
+    justify-content: center;
+  }
+  .nav-container nav {
+    width: 100%;
+  }
+  .nav-container nav ul {
+    justify-content: space-around;
+    width: 90%;
+  }
+  .nav-container nav ul li a {
+    color: var(--white);
+  }
+
+  .slider1 {
+    display: flex;
+  }
+  .slider2.is-active {
+    display: flex;
+  }
+  .slider3.is-active {
+    display: flex;
+  }
+  .slider1-img {
+    width: 55%;
+  }
+  .slider1-img img {
+    height: 100%;
+  }
+  .slider2-img {
+    width: 55%;
+  }
+  .slider2-img img {
+    height: 100%;
+  }
+  .slider3-img {
+    width: 55%;
+  }
+  .slider3-img img {
+    height: 100%;
+  }
+  .slider-description {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 45%;
+    padding: 130px 40px;
+  }
+
+  .sliders-call {
+    top: calc(100% - 70px);
+    right: calc(45% - 140px);
+  }
+
+  main .main-furniture-section {
+    display: flex;
+  }
+  .furniture-img {
+    width: 27%;
+  }
+  .furniture-img img {
+    height: 100%;
+  }
+  .furniture-description {
+    width: 46%;
+    padding: 30px;
+  }
+}
+
+@media screen and (min-width: 1180px) {
+  .slider-description {
+    padding: 160px 50px;
+  }
+
+  .furniture-description {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 46%;
+    padding: 30px 30px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .slider-description {
+    padding: 220px 80px;
+  }
+
+  .furniture-description {
+    padding: 28px 30px 28px 40px;
+  }
+}
+
+@media screen and (min-width: 1360px) {
+  body {
+    max-width: 1440px;
+  }
+
+  .slider-description {
+    padding: 300px 90px;
+  }
+
+  .furniture-description {
+    padding: 40px 35px 40px 40px;
   }
 }
