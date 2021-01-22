@@ -1,6 +1,8 @@
 # Escuela de Desarrollo Web by Platzi - Room homepage
 
-![Design preview for the Room homepage coding challenge](./design/desktop-preview.jpg)
+![Design preview for the Room homepage coding challenge](https://firebasestorage.googleapis.com/v0/b/room-homepage.appspot.com/o/desktop-preview.jpg?alt=media&token=0b7ba08f-dbbf-4e3c-9139-2ee8c7842780)
+
+Aquí les presento la realización del reto de la semana 6 del #PlatziWebChalenge, abajo se encuentran cuáles eran las instrucciones y condiciones del reto.
 
 ## Bienvenida/o 👋
 
