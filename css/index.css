@@ -159,6 +159,26 @@ main .main-sliders-container {
   width: 11px;
 }
 
+main .main-furniture-section {
+  width: 100%;
+  height: auto;
+}
+.furniture-img img {
+  width: 100%;
+}
+
+.furniture-description {
+  padding: 50px 27px;
+}
+.furniture-description h4 {
+  margin-bottom: 15px;
+  letter-spacing: 0.4rem;
+}
+.furniture-description p {
+  color: var(--dark-gray);
+  line-height: 1.8rem;
+}
+
 @media screen and (min-width: 720px) {
   .icon-menu {
     display: none;
