@@ -118,13 +118,15 @@ main .main-sliders-container {
 }
 
 .slider1-img img {
+  display: block;
   width: 100%;
-  height: auto;
 }
 .slider2-img img {
+  display: block;
   width: 100%;
 }
 .slider3-img img {
+  display: block;
   width: 100%;
 }
 
@@ -185,15 +187,18 @@ main .main-furniture-section {
   width: 100%;
   height: auto;
 }
-.furniture-img img {
+.furniture-img {
   width: 100%;
 }
-
+.furniture-img img {
+  display: block;
+  width: 100%;
+}
 .furniture-description {
   padding: 50px 27px;
 }
 .furniture-description h4 {
-  margin-bottom: 15px;
+  margin-bottom: 10px;
   letter-spacing: 0.4rem;
 }
 .furniture-description p {
@@ -202,22 +207,30 @@ main .main-furniture-section {
 }
 
 @media screen and (min-width: 425px) {
+  .slider-description {
+    padding: 50px 35px 60px;
+  }
   .sliders-call {
     top: 353px;
+  }
+  .furniture-description {
+    padding: 50px 35px;
   }
 }
 
 @media screen and (min-width: 600px) {
+  .slider-description {
+    padding: 50px 45px 60px;
+  }
   .sliders-call {
     top: 521px;
+  }
+  .furniture-description {
+    padding: 50px 45px;
   }
 }
 
 @media screen and (min-width: 720px) {
-  body {
-    font-size: 1.4rem;
-  }
-
   .logo-container {
     width: 80px;
   }
@@ -226,38 +239,24 @@ main .main-furniture-section {
   }
 
   .nav-container nav ul li a {
-    font-size: 1.5rem;
-  }
-
-  .slider1-img {
-    height: 60vh;
-  }
-  .slider1-img img {
-    height: 100%;
+    font-size: 1.3rem;
   }
 
   .slider-description h2 {
-    font-size: 3rem;
-  }
-  .slider-description p {
-    line-height: 2.2rem;
+    font-size: 2.8rem;
   }
 
   .sliders-call {
     top: 621px;
-    width: 140px;
-    height: 70px;
+    width: 120px;
+    height: 60px;
   }
   .sliders-call .arrow-icon {
-    width: 70px;
-    height: 70px;
+    width: 60px;
+    height: 60px;
   }
   .sliders-call .arrow-icon img {
-    width: 15px;
-  }
-
-  .furniture-description p {
-    line-height: 2.2rem;
+    width: 13px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -267,8 +266,14 @@ main .main-furniture-section {
 }
 
 @media screen and (min-width: 800px) {
+  .slider-description {
+    padding: 60px;
+  }
   .sliders-call {
     top: 698px;
+  }
+  .furniture-description {
+    padding: 60px;
   }
 }
 
@@ -279,10 +284,6 @@ main .main-furniture-section {
 }
 
 @media screen and (min-width: 1024px) {
-  body {
-    max-height: 100vh;
-  }
-
   .icon-menu {
     display: none;
   }
@@ -290,23 +291,30 @@ main .main-furniture-section {
     display: none;
   }
 
+  header {
+    width: 60%;
+  }
   header .header-logonav-container {
     justify-content: flex-start;
-    width: 55%;
+    width: 100%;
     padding: 0 50px;
+  }
+
+  .logo-container {
+    margin-right: 50px;
   }
 
   .nav-container {
     position: static;
     display: flex;
     justify-content: center;
+    width: 60%;
   }
   .nav-container nav {
     width: 100%;
   }
   .nav-container nav ul {
     justify-content: space-around;
-    width: 90%;
   }
   .nav-container nav ul li a {
     color: var(--white);
@@ -322,29 +330,23 @@ main .main-furniture-section {
     display: flex;
   }
   .slider1-img {
-    width: 55%;
-  }
-  .slider1-img img {
-    height: 100%;
+    width: 60%;
   }
   .slider2-img {
-    width: 55%;
-  }
-  .slider2-img img {
-    height: 100%;
+    width: 60%;
   }
   .slider3-img {
-    width: 55%;
-  }
-  .slider3-img img {
-    height: 100%;
+    width: 60%;
   }
   .slider-description {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    width: 45%;
-    padding: 130px 40px;
+    width: 40%;
+    padding: 6% 4%;
+  }
+  .slider-description p {
+    margin-bottom: 25px;
   }
 
   .sliders-call {
@@ -358,20 +360,13 @@ main .main-furniture-section {
   .furniture-img {
     width: 27%;
   }
-  .furniture-img img {
-    height: 100%;
-  }
   .furniture-description {
     width: 46%;
-    padding: 30px;
+    padding: 20px 30px;
   }
 }
 
 @media screen and (min-width: 1180px) {
-  .slider-description {
-    padding: 160px 50px;
-  }
-
   .furniture-description {
     display: flex;
     flex-wrap: wrap;
@@ -379,11 +374,23 @@ main .main-furniture-section {
     width: 46%;
     padding: 30px 30px;
   }
+
+  .sliders-call {
+    width: 140px;
+    height: 70px;
+  }
+  .sliders-call .arrow-icon {
+    width: 70px;
+    height: 70px;
+  }
+  .sliders-call .arrow-icon img {
+    width: 15px;
+  }
 }
 
 @media screen and (min-width: 1280px) {
   .slider-description {
-    padding: 220px 80px;
+    padding: 7% 6%;
   }
 
   .furniture-description {
@@ -394,10 +401,6 @@ main .main-furniture-section {
 @media screen and (min-width: 1360px) {
   body {
     max-width: 1440px;
-  }
-
-  .slider-description {
-    padding: 300px 90px;
   }
 
   .furniture-description {
